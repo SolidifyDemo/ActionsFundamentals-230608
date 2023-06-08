@@ -1,6 +1,7 @@
 # GitHub Actions Fundamentals
 
 testing workflow
+test 2
 
 Repo for the `GitHub Actions Fundamentals` training.
 
