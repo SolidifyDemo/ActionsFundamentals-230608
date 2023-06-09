@@ -12,21 +12,7 @@ on:
     
 jobs:
   build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: build
-      uses: SolidifyDemo/ActionsFundamentals-Custom@main
-      with:
-        dotnet-version: 7.0.x
-    - name: package
-      run: dotnet publish -c Release -o webapp
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v3.1.2
-      with:
-        name: webapp
-        path: webapp/**
+    uses: SolidifyDemo/ActionsFundamentals-Custom/.github/workflows/generic-ci.yml@main
         
   deploy_dev:
     runs-on: ubuntu-latest
